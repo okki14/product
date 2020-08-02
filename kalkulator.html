@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <p> Kalkulator Sederhana </p>
+    <p> Masukan Angka 1: <input type=" number " id="angka1"></p>
+    <p> Masukan Angka 2: <input type="number " id="angka2"></p>
+    <button onclick="coba1()" > Kali </button>
+    <button onclick="coba2()" > Bagi </button>
+    <button onclick="coba3()" > Tambah </button>
+    <button onclick="coba4()" > Kurang </button>
+    <button onclick="coba5()" > Modulus </button>
+    <button onclick="coba6()" > Pangkat </button>
+
+    <p id="Hasil"> Hasil! </p>
+
+    <script>
+        const coba1=()=>{
+            var input=document.getElementById("angka1").value;
+            var output=document.getElementById("angka2").value;
+            var hitung=0
+            hitung+= input*output
+            document.getElementById("Hasil").innerHTML=hitung
+        }
+
+        const coba2=()=>{
+            var input=document.getElementById("angka1").value;
+            var output=document.getElementById("angka2").value;
+            var hitung=0
+            hitung+= input/output
+            document.getElementById("Hasil").innerHTML=hitung
+        }
+
+        const coba3=()=>{
+            var input=parseInt(document.getElementById("angka1").value);
+            var output=parseInt(document.getElementById("angka2").value);
+            var hitung=0
+            hitung += input+output
+            document.getElementById("Hasil").innerHTML=hitung
+        }
+
+        const coba4=()=>{
+            var input=parseInt(document.getElementById("angka1").value);
+            var output=parseInt(document.getElementById("angka2").value);
+            var hitung=0
+            hitung+= input-output
+            document.getElementById("Hasil").innerHTML=hitung
+        }
+
+        const coba5=()=>{
+            var input=document.getElementById("angka1").value;
+            var output=document.getElementById("angka2").value;
+            var hitung=0
+            hitung+= input%output
+            document.getElementById("Hasil").innerHTML=hitung
+        }
+
+        const coba6=()=>{
+            var input=document.getElementById("angka1").value;
+            var output=document.getElementById("angka2").value;
+            var hitung=0
+            hitung+= Math.pow(input,output)
+            document.getElementById("Hasil").innerHTML=hitung
+        }
+
+    </script>
+
+
+
+</body>
+</html>

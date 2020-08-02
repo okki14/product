@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <p>
+         1.Siapakah Presiden ketiga Republik Indonesia? 
+        </p> 
+        <input type="radio" name="nomor"
+         value="presiden" id="a1">jokowi
+        <input type="radio" name="nomor"
+         value="presiden" id="a2">bayu
+         <input type="radio" name="nomor"
+         value="presiden" id="a3">anggi
+         <input type="radio" name="nomor"
+         value="presiden" id="a4">wili
+         <p>
+         2.Berikut adalah nama-nama bahasa pemograman,kecuali
+         </p>
+         <input type="radio" name="bahasa"
+         value="pemrograman" id="b1">Pyton
+        <input type="radio" name="bahasa"
+         value="pemrograman" id="b2">Micro:bit
+         <input type="radio" name="bahasa"
+         value="pemrograman" id="b3">Javascript
+         <input type="radio" name="bahasa"
+         value="pemrograman" id="b4">HTML
+     
+         <p>
+         3.Apa judul lagu yang diduga diplagiat oleh lagu 'sayang' Via Vallen?
+         </p>
+         <input type="radio" name="nyanyi"
+         value="penyanyi" id="c1">Qing Fei De Yi
+        <input type="radio" name="nyanyi"
+         value="penyanyi" id="c2">Ting Hai
+         <input type="radio" name="nyanyi"
+         value="penyanyi" id="c3">Mirai E Kiroro
+         <input type="radio" name="nyanyi"
+         value="penyanyi" id="c4">Hau Siang Hau Siang
+         <p>
+         4.Siapakah sosok di balik topeng Batman?
+         </p>
+         <input type="radio"name="dc"
+         value="batman" id="d1">Robin
+        <input type="radio"name="dc"
+         value="batman" id="d2">Hana
+         <input type="radio"name="dc"
+         value="batman" id="d3">Rahcel
+         <input type="radio"name="dc"
+         value="batman" id="d4">Mag
+         <p>
+         <button onclick="tekan()"> tekan </button>
+         <p id="tes">  </p>   
+         
+         <script>
+           const tekan=()=>{
+               var nilai=0
+            //    var total=0
+               if(document.getElementById("a1").checked==true){
+                nilai+=25
+               }else{
+                   nilai+=0
+               }if(document.getElementById("b4").checked==true){
+                   nilai+=25
+
+               }else{
+                   nilai+=0
+               }if(document.getElementById("c2").checked==true){
+                   nilai+=25
+               
+               }else{
+                   nilai+=0
+               }if(document.getElementById("d3").checked==true){
+                   nilai+=25
+               }else{
+                   nilai+=0
+               }
+               document.getElementById("tes").innerHTML=nilai
+               
+           }  
+
+         </script>
+
+         
+    
+
+
+</body>
+</html>
